@@ -1,0 +1,28 @@
+name: 'File Puller'
+description: 'Sync slected files from other repositories'
+inputs:
+  config-file:
+    description: 'Path to File Puller config, relative to repository root'
+    required: true
+    default: '.file-puller.json'
+outputs:
+  diff:
+    description: "`git diff` output"
+    value: ${{ steps.random-number-generator.outputs.random-id }}
+runs:
+  using: "composite"
+  steps:
+    - name: Read items to sync, from the `config-file` input
+      run: cat ${{ inputs.config-file }}
+      shell: bash
+    - name: Clone the destination repository and check out a branch
+      uses: actions/checkout@v2
+    - name: Clone each source repository and check out the specified ref
+      run: for each thing; do foo; done
+      shell: bash
+    - name: Copy files from the source repositories into destination
+      run: for each thing; do foo; done
+      shell: bash
+    - name: Push changes to the destination repository
+      run: git push origin main
+      shell: bash
