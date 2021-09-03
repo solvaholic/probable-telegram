@@ -37,6 +37,7 @@ Assumptions:
 - Each **destination path** is unique
 - A transform will have a prescribed syntax, for example to be used by `awk`, `sed`, or `patch`
 - It's reasonable to expect a contributor to use `docker`, `git`, `gh`, `sed`, `awk`, and `patch`
+- It's OK to have the user clone the destination repo, in the workflow job
 
 <!--
 
