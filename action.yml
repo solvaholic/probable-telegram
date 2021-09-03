@@ -1,10 +1,9 @@
 name: 'File Puller'
 description: 'Sync slected files from other repositories'
 inputs:
-  config-file:
-    description: 'Path to File Puller config, relative to repository root'
-    required: true
-    default: '.file-puller.json'
+  config_file:
+    description: 'Path to File Puller config'
+    default: '.file-puller/config.json'
 outputs:
   diff:
     description: "`git diff` output"

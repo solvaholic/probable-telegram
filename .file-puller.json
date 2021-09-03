@@ -1,9 +1,0 @@
-[
-    { "dstPath": ".github/workflows/linter.yml",
-      "srcRepo": "solvaholic/octodns-sync",
-      "srcRef": "main" },
-    { "dstPath": "_config.yml",
-      "srcRepo": "solvaholic/solvaholic.github.io",
-      "transform": ".fp/_config.sed"
-    }
-]
